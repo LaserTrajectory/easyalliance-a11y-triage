@@ -1,0 +1,2 @@
+typesafe-sdk>=0.7
+system-one-adapter[anthropic,openai]>=0.2
