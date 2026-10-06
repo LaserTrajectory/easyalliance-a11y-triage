@@ -14,7 +14,7 @@ import json
 import re
 from pathlib import Path
 
-from triage import backends, questions, report, wcag
+from triage import backends, env, questions, report, wcag
 from triage.label import load_issues, load_labels
 from triage.pipeline import triage
 
@@ -80,6 +80,8 @@ def main() -> None:
             try:
                 t = triage(issue, backend)
             except Exception as e:  # keep going; one bad issue shouldn't kill a paid run
+                if env.is_auth_error(e):  # ...but a rejected key fails every issue, so stop now
+                    raise SystemExit(f"API key rejected by {backend.name}. Check it with: python -m triage.check_keys --live")
                 print(f"  ! {issue['id']}: {type(e).__name__}: {e}")
                 continue
             spent += t.cost_usd
