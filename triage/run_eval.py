@@ -81,7 +81,7 @@ def main() -> None:
                 t = triage(issue, backend)
             except Exception as e:  # keep going; one bad issue shouldn't kill a paid run
                 if env.is_auth_error(e):  # ...but a rejected key fails every issue, so stop now
-                    raise SystemExit(f"API key rejected by {backend.name}. Check it with: python -m triage.check_keys --live")
+                    raise SystemExit(f"API key rejected or not permitted by {backend.name} (401/403). Check it with: python -m triage.check_keys --live")
                 print(f"  ! {issue['id']}: {type(e).__name__}: {e}")
                 continue
             spent += t.cost_usd

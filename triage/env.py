@@ -26,7 +26,11 @@ def load_dotenv(path: Path = ENV_FILE) -> None:
         if not line or line.startswith("#") or "=" not in line:
             continue
         key, value = line.split("=", 1)
-        key, value = key.strip().removeprefix("export ").strip(), value.strip().strip("'\"")
+        key, value = key.strip().removeprefix("export ").strip(), value.strip()
+        if value.startswith(("'", '"')):
+            value = value[1:].split(value[0], 1)[0]  # quoted: keep everything up to the closing quote
+        else:
+            value = value.split(" #", 1)[0].strip()  # unquoted: drop a trailing " # comment"
         if value and key not in os.environ:
             os.environ[key] = value
 
@@ -48,5 +52,5 @@ def require(name: str) -> None:
 
 
 def is_auth_error(e: Exception) -> bool:
-    """True for a rejected key from TypeSafe or any LLM provider SDK."""
+    """True for a rejected or unauthorized key (401/403) from TypeSafe or any LLM provider SDK."""
     return any("Authentication" in cls.__name__ or "PermissionDenied" in cls.__name__ for cls in type(e).__mro__)
