@@ -16,6 +16,8 @@ from dataclasses import dataclass, field
 
 from typesafe_sdk import Choice, Noul, Score
 
+from triage import env
+
 JEV_USD_PER_MTOK = 0.042  # input only; output tokens are free (docs.typesafe.ai/models)
 
 
@@ -154,10 +156,13 @@ class MockBackend(Backend):
 def make(kind: str, provider: str | None = None, model: str | None = None, usd_per_mtok: float = 0.0) -> Backend:
     if kind == "mock":
         return MockBackend()
+    env.load_dotenv()
     if kind == "jev":
+        env.require("jev")
         return JevBackend(model or "jev-latest")
     if kind == "adapter":
         if not (provider and model):
             raise SystemExit("--backend adapter needs --provider and --model")
+        env.require(provider)
         return AdapterBackend(provider, model, usd_per_mtok)
     raise SystemExit(f"unknown backend {kind!r}")

@@ -19,7 +19,12 @@ enough to route on.
 /opt/homebrew/bin/python3.13 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 cp .env.example .env   # then fill in only the keys you have
+.venv/bin/python -m triage.check_keys          # which keys are set (free)
+.venv/bin/python -m triage.check_keys --live   # confirm Jev accepts your key (one call, < $0.0001)
 ```
+
+`.env` is loaded automatically; a key already set in your shell takes precedence.
+Key values are never printed.
 
 ## Workflow
 
@@ -29,6 +34,7 @@ cp .env.example .env   # then fill in only the keys you have
 | Collect GitHub a11y issues | `python scripts/collect_issues.py` | free |
 | Label issues | `python -m triage.label --labeler yourname` | free, your time |
 | Expert spot-check sample | `python -m triage.label --export-review 30` | expert's time |
+| Check API keys | `python -m triage.check_keys --live` | < $0.0001 |
 | Offline plumbing run | `python -m triage.run_eval --backend mock` | free |
 | LLM baseline | `python -m triage.run_eval --backend adapter --provider anthropic --model claude-haiku-4-5-20251001` | LLM tokens |
 | Jev run | `python -m triage.run_eval --backend jev --max-usd 1` | ~$0.05 for all 561 issues |
@@ -36,7 +42,6 @@ cp .env.example .env   # then fill in only the keys you have
 | Live demo, one report | `python -m triage.demo "VoiceOver reads the close button as just 'button'"` | free with mock |
 
 Run commands from this folder with `.venv/bin/python` (or activate the venv).
-Load keys first with `set -a; source .env; set +a`.
 
 Try everything right now without keys or labels using the synthetic demo set:
 
