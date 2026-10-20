@@ -31,3 +31,11 @@ def guideline_of(sc_num: str) -> str:
 
 def all_criteria() -> list[str]:
     return [sc["num"] for g in guidelines() for sc in g["criteria"]]
+
+
+def search(word: str) -> list[dict]:
+    """Criteria whose name, then whose text, mentions `word` (case-insensitive)."""
+    w = word.lower()
+    scs = [sc for g in guidelines() for sc in g["criteria"]]
+    by_name = [sc for sc in scs if w in sc["handle"].lower()]
+    return by_name + [sc for sc in scs if sc not in by_name and w in sc["text"].lower()]

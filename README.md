@@ -58,6 +58,7 @@ Try everything right now without keys or labels using the synthetic demo set:
   **No** for feature requests, questions, CI/tooling, docs-only work, and goal checklists or
   audit plans ("make the whole app keyboard accessible") that name no barrier anyone has hit.
 - **Criterion**: the single best WCAG 2.2 success criterion (`data/wcag22.json`).
+  At the prompt, type a word (`focus`) or a guideline (`2.4`) to list candidates.
   Use `?` if you genuinely can't decide; those are excluded from criterion metrics.
 - **Severity**: 0 minor, 1 a workaround exists, 2 blocks some disabled users entirely.
 - **Has repro**: could a tester reproduce it from the report alone?
