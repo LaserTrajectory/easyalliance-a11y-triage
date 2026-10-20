@@ -53,9 +53,10 @@ Try everything right now without keys or labels using the synthetic demo set:
 
 ## Labeling guide
 
-- **a11y bug = yes** if the report describes a barrier disabled users hit in the product,
-  including "make X keyboard accessible" tasks that imply a current barrier.
-  **No** for feature requests, questions, CI/tooling, docs-only work.
+- **a11y bug = yes** if the report names a specific barrier that exists in the product now,
+  even when phrased as a fix ("the search icon has no alt text").
+  **No** for feature requests, questions, CI/tooling, docs-only work, and goal checklists or
+  audit plans ("make the whole app keyboard accessible") that name no barrier anyone has hit.
 - **Criterion**: the single best WCAG 2.2 success criterion (`data/wcag22.json`).
   Use `?` if you genuinely can't decide; those are excluded from criterion metrics.
 - **Severity**: 0 minor, 1 a workaround exists, 2 blocks some disabled users entirely.
