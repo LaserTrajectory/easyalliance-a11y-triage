@@ -4,8 +4,8 @@
     python -m triage.label --export-review 30          # sample for expert spot-check
 
 Each label: is it an a11y bug, which WCAG 2.2 success criterion (e.g. 1.4.3),
-severity 0-2, and whether it has reproduction detail. Saved after every issue,
-so you can stop any time with Ctrl-C or 'q'.
+severity 0-2, and whether it has reproduction detail. Issues come in a fixed
+shuffled order. Saved after every issue, so you can stop any time with Ctrl-C or 'q'.
 """
 
 import argparse
@@ -61,11 +61,29 @@ def show(issue: dict, full: bool = False) -> None:
         print("  … (type 'm' at the first prompt to see the rest)")
 
 
-def label_loop(issues_path: Path, labels_path: Path, labeler: str) -> None:
+def ask_criterion() -> str:
+    """Ask for a criterion number; a guideline number (1.4) or a word (contrast) lists candidates."""
+    valid = set(wcag.all_criteria())
+    guidelines = {g["num"]: g for g in wcag.guidelines()}
+    while True:
+        v = ask("  WCAG criterion (e.g. 1.4.3, ?=unsure, or a word/guideline to look up): ", bool)
+        if v in valid or v == "?":
+            return v
+        hits = guidelines[v]["criteria"] if v in guidelines else wcag.search(v)
+        if not hits:
+            print("    no match; try another word (focus, contrast, keyboard, label, status...)")
+        for sc in hits[:15]:
+            print(f"    {sc['num']:<7} {sc['handle']} ({sc['level']})")
+        if len(hits) > 15:
+            print(f"    … {len(hits) - 15} more; try a narrower word")
+
+
+def label_loop(issues_path: Path, labels_path: Path, labeler: str, seed: int = 0) -> None:
     done = load_labels(labels_path)
-    todo = [i for i in load_issues(issues_path) if i["id"] not in done]
+    issues = load_issues(issues_path)
+    random.Random(seed).shuffle(issues)  # the file is grouped by search query; a fixed shuffle mixes topics
+    todo = [i for i in issues if i["id"] not in done]
     print(f"{len(done)} labeled, {len(todo)} to go. Criteria list: data/wcag22.json")
-    valid_sc = set(wcag.all_criteria())
     for issue in todo:
         show(issue)
         a = ask("\n  a11y bug? [y/n, s=skip, m=more]: ", lambda v: v in {"y", "n", "s", "m"})
@@ -77,7 +95,7 @@ def label_loop(issues_path: Path, labels_path: Path, labeler: str) -> None:
         row = {"id": issue["id"], "is_a11y_bug": int(a == "y"), "labeler": labeler,
                "criterion": "", "severity": "", "has_repro": ""}
         if a == "y":
-            sc = ask("  WCAG criterion (e.g. 1.4.3, ?=unsure): ", lambda v: v in valid_sc or v == "?")
+            sc = ask_criterion()
             if sc != "?":
                 print(f"    -> {sc} {wcag.criterion(sc)['handle']}")
             row["criterion"] = "" if sc == "?" else sc
