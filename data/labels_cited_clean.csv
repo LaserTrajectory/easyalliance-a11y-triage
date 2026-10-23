@@ -1,0 +1,382 @@
+id,is_a11y_bug,criterion,severity,has_repro,labeler,notes
+thexerteproject/xerteonlinetoolkits#1107,1,1.4.10,,,cited,cited: ies fail WCAG 2.1 AA Success Criterion (1.4.10: Reflow) when zoomed at 400%. The header and footer o
+freedomofpress/securedrop.org#874,1,2.4.5,,,cited,cited: For the success criterion of this [WCAG 2.4.5 standard](https://www.w3.org/TR/UNDERSTANDING-WCAG20/n
+sara-sabr/vue-governance#14,1,2.4.1,,,cited,cited: rence: [Understanding Success Criterion 2.4.1: Bypass Blocks](https://www.w3.org/WAI/WCAG21/Understa
+web-infrastructure/doc_architecture#23,1,1.1.1,,,cited,"cited: k, see [Understanding Success Criterion 1.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv"
+SolutionGuidance/psm#510,1,4.1.2,,,cited,"cited: by attribute. > Success Criterion: > [4.1.2: Name, Role, Value](http://www.w3.org/TR/WCAG20/#ensur"
+whatwg/html#7732,1,1.4.10,,,cited,cited: degree to meet [wcag success criterion 1.4.10: Reflow](https://www.w3.org/WAI/WCAG21/Understanding/
+Leaflet/Leaflet#7947,1,3.2.2,,,cited,cited: avior fails WCAG 2.1 [Success Criterion 3.2.2 On Input](https://www.w3.org/TR/WCAG21/#on-input). -
+angular/components#25378,1,1.4.11,,,cited,cited: MatDatepicker - WCAG 1.4.11 Issue ![Primary Date Color-Pass](https://user-image
+Leaflet/Leaflet#6742,1,1.4.1,,,cited,cited: s identified only by color. Criteria 1.4.1 Compliance success level A ![0f49f0d4-0e1d-11e7-8e
+dita-ot/dita-ot#2963,1,1.3.1,,,cited,cited: ssue is related with [Success Criterion 1.3.1 - Info and Relationships](https://www.w3.org/WAI/GL/UN
+twbs/bootstrap#31427,1,2.4.7,,,cited,cited: ust be visible** (see success criterion 2.4.7 : https://www.w3.org/TR/WCAG21/#focus-visible).
+elastic/eui#5951,1,3.2.1,,,cited,cited: his is an issue with [Success Criterion 3.2.1: On Focus](https://www.w3.org/WAI/WCAG21/Understanding
+elastic/eui#5884,1,1.3.1,,,cited,cited: nce * [Understanding Success Criterion 1.3.1: Info and Relationships](https://www.w3.org/WAI/WCAG21
+elastic/eui#5673,1,1.3.1,,,cited,cited: te) - [Understanding Success Criterion 1.3.1: Info and Relationships](https://www.w3.org/WAI/WCAG21
+elastic/eui#5666,1,3.3.2,,,cited,cited: nce - [ Understanding Success Criterion 3.3.2: Labels or Instructions](https://www.w3.org/WAI/WCAG21
+UCF/UCF-Footer-Plugin#38,1,1.4.4,,,cited,"cited: oes not meet WCAG 2.1 Success Criterion 1.4.4 - Resize Text according to SiteImprove, due to the ove"
+jadu/pulsar#1021,1,3.3.1,,,cited,"cited: To increase conformance for WCAG 2.1 3.3.1, provide a better experience for AT users and improve"
+uPortal-Project/CardWebComponents#68,1,1.4.12,,,cited,cited: text** **WCAG 2.1** Success Criterion 1.4.12 Text Spacing (Level AA) In content implemented using
+home-assistant/frontend#6487,1,1.3.1,,,cited,cited: es (WCAG). See [WCAG success criterion 1.3.1](https://www.w3.org/WAI/WCAG21/Understanding/info-and-
+Leaflet/Leaflet#7191,1,2.4.1,,,cited,"cited: would also meet WCAG success criterion 2.4.1 Bypass Blocks, the ""[Understanding 2.4.1: Bypass Block"
+Leaflet/Leaflet#6821,1,2.4.4,,,cited,cited: eeds text or context. Success Criterion 2.4.4 Link Purpose (In Context): https://www.w3.org/TR/WCAG2
+mui/material-ui#31363,1,4.1.2,,,cited,"cited: indows) This fails Success Criterion 4.1.2: Name, Role, Value https://www.w3.org/WAI/WCAG21/Unde"
+laurielim/laurielim.github.io#3,1,2.5.5,,,cited,"cited: cons do not meet WCAG Success Criterion 2.5.5 Target Size This is for a level AAA success criterion,"
+open-sdg/open-sdg#1195,1,1.4.10,,,cited,cited: to [F102: Failure of Success Criterion 1.4.10 due to content disappearing and not being available w
+Maps4HTML/MapML.js#215,1,2.5.5,,,cited,cited: ve to meet the requirements of WCAG [SC 2.5.5 Target Size](https://www.w3.org/TR/WCAG21/#target-size
+alphagov/tech-docs-gem#114,1,2.4.7,,,cited,cited: Failing the WCAG 2.1. success criterion 2.4.7 (focus visible). See the example [here](https://www
+brucemiller/LaTeXML#1452,1,1.1.1,,,cited,cited: [1] [Understanding Success Criterion 1.1.1: Non-text Content](https://www.w3.org/WAI/WCAG22/Under
+wagtail/wagtail#5989,1,1.3.1,,,cited,cited: failure of [WCAG2.1’s Success Criterion 1.3.1 (Info and Relationships)](https://www.w3.org/TR/WCAG20
+topcoder-platform/community-app#2783,1,3.1.1,,,cited,cited: Level**: A **WCAG Success Criterion**: 3.1.1 Language of Page **Screen Reader Used**: Other **Acc
+topcoder-platform/community-app#2784,1,1.1.1,,,cited,cited: Level**: A **WCAG Success Criterion**: 1.1.1 Non-Text Content **Screen Reader Used**: **Accessib
+topcoder-platform/community-app#2785,1,1.1.1,,,cited,cited: Level**: A **WCAG Success Criterion**: 1.1.1 Non-Text Content **Screen Reader Used**: **Accessib
+topcoder-platform/community-app#2786,1,1.2.3,,,cited,cited: Level**: A **WCAG Success Criterion**: 1.2.3 Audio Description or Media Alternative (Prerecorded)
+topcoder-platform/community-app#2787,1,1.1.1,,,cited,cited: Level**: A **WCAG Success Criterion**: 1.1.1 Non-Text Content **Screen Reader Used**: **Accessib
+topcoder-platform/community-app#2788,1,2.4.3,,,cited,cited: Level**: A **WCAG Success Criterion**: 2.4.3 Focus Order **Screen Reader Used**: Voiceover **Acce
+topcoder-platform/community-app#2789,1,1.3.1,,,cited,cited: Level**: A **WCAG Success Criterion**: 1.3.1 Info and Relationships **Screen Reader Used**: Other
+topcoder-platform/community-app#2757,1,2.4.7,,,cited,cited: evel**: AA **WCAG Success Criterion**: 2.4.7 Focus Visible **Screen Reader Used**: N/A **Accessib
+CCALI/a2jdeps#51,1,2.4.13,,,cited,cited: t WCAG 2.2 spec adds [Success Criterion 2.4.13 Page Break Navigation](https://www.w3.org/TR/WCAG22/#
+vaadin/web-components#134,1,2.2.2,,,cited,"cited: tandards * [WCAG 2.1 Success Criterion 2.2.2 Pause, Stop, Hide (Level A)](https://www.w3.org/TR/WCA"
+GSA-TTS/all_sorns#144,1,1.3.1,,,cited,cited: d.mp4 ## WCAG SC [Success Criterion 1.3.1 Info and Relationships (Level A)](https://www.w3.org/W
+GSA-TTS/all_sorns#148,1,4.1.2,,,cited,"cited: fect. ## WCAG SC [Success Criterion 4.1.2 Name, Role, Value (Level A):](https://www.w3.org/WAI/W"
+vaadin/web-components#118,1,1.4.13,,,cited,cited: tandards * [WCAG 2.1 Success Criterion 1.4.13 Content on Hover or Focus (Level AA)](https://www.w3.
+vaadin/web-components#170,1,4.1.2,,,cited,"cited: tandards * [WCAG 2.1 Success Criterion 4.1.2 Name, Role, Value (Level A)](https://www.w3.org/TR/WCA"
+nirjan-dev/learning-to-code#319,1,1.3.5,,,cited,cited: ng AA compliance with Success Criterion 1.3.5: Identify Input Purpose. # Make Form Fields Look Li
+videojs/video.js#7487,1,3.1.2,,,cited,cited: iption WCAG 2.0/2.1 [Success Criterion 3.1.2 Language of Parts](https://www.w3.org/TR/WCAG21/#langu
+cds-snc/resources-ressources#138,1,3.2.4,,,cited,cited: ality (ex: links) > Success Criterion [3.2.4 Consistent Identification](https://www.w3.org/TR/WCAG2
+cds-snc/resources-ressources#137,1,1.1.1,,,cited,cited: 520aa24f.png) > Success Criterion [1.1.1 Non-text Content](https://www.w3.org/TR/WCAG21/#non-te
+sparkdesignsystem/Backlog#1372,1,1.4.10,,,cited,cited: klog/issues/1392 - [Success Criterion 1.4.10: Reflow](https://www.w3.org/WAI/WCAG21/Understanding/
+sparkdesignsystem/Backlog#1392,1,1.4.10,,,cited,cited: evel AA compliance. [Success Criterion 1.4.10: Reflow](https://www.w3.org/WAI/WCAG21/Understanding/
+freedomofpress/securedrop#6313,1,2.4.2,,,cited,cited: (or equivalents) in page `title`s (WCAG 2.4.2) Per #5972: > * The page `<title>` must be accurate
+mortendk/eleven#158,1,1.4.1,,,cited,cited: h is AWESOME and helps satisfy [WCAG SC 1.4.1 Use of Color](https://www.w3.org/TR/UNDERSTANDING-WCAG
+US-EPA-CAMD/easey-ui#3415,1,1.4.3,,,cited,cited: idelines and WCAG 2.0 Success Criterion 1.4.3. See image below: ![image.png](https://images.zenhubus
+US-EPA-CAMD/easey-ui#3414,1,4.1.3,,,cited,cited: violation of WCAG 2.1 Success Criterion 4.1.3. ![image.png](https://images.zenhubusercontent.com/61
+US-EPA-CAMD/easey-ui#3416,1,1.3.1,,,cited,cited: tion 508 and WCAG 2.0 Success Criterion 1.3.1. ![image.png](https://images.zenhubusercontent.com/61
+US-EPA-CAMD/easey-ui#2365,1,2.4.3,,,cited,cited: tion 508 and WCAG 2.0 Success Criterion 2.4.3 The Search EPA form field is the last to receive keyb
+US-EPA-CAMD/easey-ui#2019,1,1.3.1,,,cited,cited: n 508 and of WCAG 2.0 Success Criterion 1.3.1 | Properly associate a form label with all input eleme
+US-EPA-CAMD/easey-ui#1490,1,1.3.1,,,cited,cited: n 508 and of WCAG 2.0 Success Criterion 1.3.1 | ## Testing Tester: @aprematta
+US-EPA-CAMD/easey-ui#1494,1,2.4.3,,,cited,cited: tion 508 and WCAG 2.0 Success Criterion 2.4.3 |
+US-EPA-CAMD/easey-ui#1504,1,1.4.3,,,cited,cited: idelines and WCAG 2.0 Success Criterion 1.4.3. | ## Testing Tester: @aprematta ### Definition of
+Section508Coordinators/DHSA-TT-200-A#443,1,2.4.7,,,cited,cited: rrect] ## Description Test ID 4.D - 2.4.7 focus visible. There was NO focus that was visible f
+presidential-innovation-fellows/worker-dol-gov#5,1,1.2.2,,,cited,cited: reader. Section 508 - 22(n) WCAG 2.0 - 1.2.2 Web: Forms
+Section508Coordinators/TrustedTester#7,1,1.3.2,,,cited,cited: no tests for non-CSS violations of 1.3.2 Meaningful Sequence I'm sorry if this is not the right
+presidential-innovation-fellows/worker-dol-gov#4,1,1.2.2,,,cited,cited: n list. Section 508 - 22(n) WCAG 2.0 - 1.2.2 Web: Forms
+flatpickr/flatpickr#2672,1,2.4.3,,,cited,"cited: isturbed taborder on mobile (fails WCAG 2.4.3) On mobile, default native input is used. That's fine."
+designsystemau/gold-design-system-site#14,1,1.4.3,,,cited,"cited: dark theme accordion fails WCAG 2.1, SC 1.4.3 requirements # Bug report - [x] I’ve read and under"
+ucla-oarc-web/WebBlocks-kit#2,1,2.2.4,,,cited,cited: ks on news/events pattern fail WCAG 2.0 2.2.4 [WCAG 2.0 Guideline 2.2.4](http://www.w3.org/TR/2008/R
+wet-boew/GCWeb#1208,1,3.2.3,,,cited,cited: revious page. Current this fails WCAG 3.2.3 Consistent Navigation - Level AA.
+SU-SWS/open_framework#310,1,1.4.3,,,cited,cited: rast for .caption class to meet WCAG AA 1.4.3 The current color for .caption fails WCAG AA 1.4.3. G
+smashingmagazine/redesign#105,1,1.4.3,,,cited,cited: ce vision. This fails WCAG criteria 1.4.3 (level AA) http://www.w3.org/TR/UNDERSTANDING-WCAG20/v
+middlebury/frontend#177,1,2.4.4,,,cited,cited: not contain any text and will fail WCAG 2.4.4 Link Purpose (In Context) Level A. The purpose of a [`
+xaksis/vue-good-table#899,1,1.4.3,,,cited,"cited: e contrast, which means they fail [WCAG 1.4.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-aud"
+smashingmagazine/redesign#107,1,2.4.4,,,cited,cited: e is additionally part of WCAG criteria 2.4.4 Additionally the tab order is kind of strange as it
+duckduckgo/duckduckgo-styles#69,1,2.4.7,,,cited,"cited: default, visible focus outlining (WCAG 2.4.7) Copied from a previous Reddit post -- it took me far"
+dokuwiki/dokuwiki#3463,1,1.3.1,,,cited,cited: connection is to the page. That fails [1.3.1 Info and Relationships](https://www.w3.org/TR/WCAG21/#
+dokuwiki/dokuwiki#3452,1,1.4.4,,,cited,cited: making it harder to read. That fails [1.4.4 Resize text](https://www.w3.org/TR/WCAG21/#resize-text
+dokuwiki/dokuwiki#3464,1,1.4.13,,,cited,cited: ad the text underneath it. That fails [1.4.13 Content on Hover or Focus](https://www.w3.org/TR/WCAG
+dokuwiki/dokuwiki#3460,1,4.1.2,,,cited,"cited: have an `aria-label` etc). That fails [4.1.2 Name, Role, Value](https://www.w3.org/TR/WCAG21/#name-"
+knative/ux#64,1,1.1.1,,,cited,cited: Title: WCAG 1.1.1: Ensures <img> elements have alternate text or a role
+dnet/androsphinx#22,1,1.1.1,,,cited,cited: decorative). This is related to WCAG 1.1.1 Non-text content.
+empowerai/fs-permit-platform#613,1,1.1.1,,,cited,"cited: f39) Linkage: CTF-96, CTF-102 WCAG: 1.1.1 Non-text Content ## Acceptance criteria - [x] add"
+nvaccess/nvda#9874,1,1.1.1,,,cited,"cited: nd ignore it, as in [WCAG 2.0 guideline 1.1.1](https://www.w3.org/TR/2008/REC-WCAG20-20081211/#text-"
+Icinga/icingaweb2#1369,1,1.1.1,,,cited,cited: 3f7edbd1dec61211a4f565945d03a WCAG/1.1.1: Add example for accessible SVGs refs #8364
+liqd/a4-meinberlin#133,1,1.1.1,,,cited,cited: d to provide an alternative text ([WCAG 1.1.1](https://www.w3.org/TR/WCAG20/#text-equiv-all)). There
+bazelbuild/bazel#14491,1,1.1.1,,,cited,cited: Website Accessibility-WCAG 1.1.1: Ensures <img> elements have alternate text or a role
+videojs/video.js#7725,1,1.2.1,,,cited,cited: tions to videojs in order to meet [wcag 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-onl
+dulibrarytech/digitaldu-frontend#103,1,1.2.1,,,cited,cited: WCAG 1.2.1 Audio-only and Video-only (Prerecorded) G158 needs tes
+solex2006/SELIProject#8,1,1.2.1,,,cited,cited: REQ_WCAG_1.2.1 Audio-only # GUIDELINE ## Principle > PERCEIVABLE: I
+WordPress/gutenberg#15281,1,1.2.2,,,cited,cited: n. #### Relevant standards - [1.2.2 Captions (Prerecorded) (Level A)](https://www.w3.
+GSA/digitalgov.gov#1625,1,1.2.3,,,cited,cited: videos both lack Audio Description WCAG 1.2.3 which convey visual information > - the sites hyperl
+wet-boew/wet-boew#2863,1,1.2.5,,,cited,cited: Meeting WCAG 1.2.5 Audio Description [Prerecorded] with the media player
+hmrc/accessibility#49,1,1.3.1,,,cited,"cited: s with Adam, concluded it is not a WCAG 1.3.1: Info and Relationships fail if `aria-labelledby` not"
+dnet/androsphinx#21,1,1.3.1,,,cited,cited: navigation. This is related to WCAG 1.3.1 Info and relations.
+empowerai/fs-permit-platform#614,1,1.3.1,,,cited,cited: 691a38face25) Linkage: CTF-97 WCAG: 1.3.1 Info and Relationship ## Acceptance criteria - [x
+empowerai/fs-permit-platform#606,1,1.3.1,,,cited,cited: 1d242711739) Linkage: CTF-85 WCAG: 1.3.1 Info and Relationship ## Acceptance criteria - [x
+elastic/kibana#121449,1,1.3.1,,,cited,cited: ria:** [Understanding Success Criterion 1.3.1: Info and Relationships - Level A](https://www.w3.org/
+react/react#24987,1,1.3.2,,,cited,"cited: ion, this issue is a violation of WCAG [1.3.2: Meaningful Sequence](https://www.w3.org/WAI/WCAG21/Un"
+angular/components#23917,1,1.3.2,,,cited,cited: nt Tooltip isn't compliant with [WCAG - 1.3.2 Meaningful order (Level A)](http://www.w3.org/TR/UNDER
+smashingmagazine/redesign#156,1,1.3.2,,,cited,"cited: ocument semantics. This could be a WCAG 1.3.2 failure, although not super bad here as the previews a"
+City-of-Helsinki/servicemap#289,1,1.3.2,,,cited,cited: sivun rakenteen hahmottamiseen. WCAG: 1.3.2 Merkitykseen vaikuttava järjestys: Kun sisällön esitys
+pypi/warehouse#6249,1,1.3.3,,,cited,"cited: tional instructions from help text WCAG 1.3.3: > Instructions do not rely upon shape, size, or vi"
+dulibrarytech/digitaldu-frontend#127,1,1.3.3,,,cited,cited: WCAG 1.3.3 Sensory Characteristics Using an image with a text alt
+dulibrarytech/digitaldu-frontend#126,1,1.3.3,,,cited,cited: WCAG 1.3.3 Sensory Characteristics G96 todo G96: Providing textua
+microsoft/pxt-microbit#3521,1,1.3.3,,,cited,cited: ' screen. **WCAG Reference:** [WCAG 1.3.3 - Sensory Characteristics](https://www.w3.org/WAI/WCAG
+navikt/Designsystemet-old#65,1,1.3.5,,,cited,cited: vngiving for input-felt for å møte WCAG 1.3.5 Vi trenger helhetlig navngiving for inputfelt slik at
+digipolisantwerp/antwerp-ui_react#205,1,1.3.5,,,cited,cited: complete attribute to comply with [WCAG 1.3.5 Identify Input Purpose](https://www.w3.org/WAI/WCAG21
+solex2006/SELIProject#88,1,1.3.5,,,cited,cited: o this cases *************** WCAG: 1.3.5 - [ ] Form fields that serve certain purposes must ha
+5t3ph/htmlrecipes#14,1,1.3.5,,,cited,cited: update contact form to meet wcag 1.3.5 As [the contact form](https://htmlrecipes.dev/#contact
+middlebury/frontend#137,1,1.4.1,,,cited,"cited: bold, or something else to satisfy WCAG 1.4.1. ![screen shot 2018-03-12 at 2 09 51 pm](https://us"
+apluslms/a-plus#601,1,1.4.1,,,cited,"cited: differences between things clear, (WCAG 1.4.1) One idea would be that we have a single style of butt"
+elastic/kibana#64969,1,1.4.1,,,cited,cited: nternal accessibility guidance for WCAG 1.4.1 (Use of Color) on chart and map styling controls: docu
+HelixDesignSystem/helix-ui#851,1,1.4.1,,,cited,cited: ers ## Additional Context [WCAG § 1.4.1 Use of Color - Level A](https://www.w3.org/WAI/WCAG21/
+twbs/bootstrap#37365,1,1.4.1,,,cited,cited: WCAG 1.4.1 Use of Color issue on active (toggled) and disabled co
+angular/components#25961,1,1.4.1,,,cited,"cited: ally communicated only with color (WCAG 1.4.1) ### Is this a regression? - [ ] Yes, this behavior u"
+angular/components#25886,1,1.4.1,,,cited,cited: e selected state with color alone (WCAG 1.4.1) ### Description single-select chips visually commu
+angular/components#25900,1,1.4.1,,,cited,cited: ally communicated only with color (WCAG 1.4.1) ### Description single-select list visually commun
+Redocly/redoc#2225,1,1.4.1,,,cited,cited: WCAG 1.4.1 - Links are not clearly identifiable **Describe the pr
+Icinga/icingaweb2#1221,1,1.4.1,,,cited,cited: 623acfeb8e1b67d3d1cc0906e867b WCAG/1.4.1: Fix example for text cues on a form's required elemen
+CeON/fairchive#975,1,1.4.1,,,cited,cited: about which notifications are new (WCAG 1.4.1) Colorblind users will not know which notifications ar
+craftcms/cms#6153,1,1.4.1,,,cited,"cited: till be useful, and encouraged by [WCAG 1.4.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-aud"
+freeCodeCamp/LearnToCodeRPG#32,1,1.4.1,,,cited,"cited: rrently, I believe your links fail WCAG 1.4.1 - I'd recommend adding an underline to links and only"
+bcgov/digital.gov.bc.ca#279,1,1.4.1,,,cited,cited: consistent link styles Reference: [WCAG 1.4.1 - Use of Color](https://www.w3.org/TR/WCAG21/#use-of-c
+herbie-fp/herbie#325,1,1.4.1,,,cited,"cited: er, it might be desirable to meet [WCAG 1.4.1 Use of Color](https://www.w3.org/TR/2008/REC-WCAG20-20"
+neontribe/contemplating-action#191,1,1.4.1,,,cited,cited: to determine a link is a fail of `WCAG 1.4.1 Use of colour`. We should use a conventional underline
+salesforce-ux/design-system#568,1,1.4.1,,,cited,cited: s are identified by colour alone ([WCAG 1.4.1](https://www.w3.org/WAI/WCAG21/Understanding/use-of-co
+zoltan-dulac/kc-munchkin#7,1,1.4.2,,,cited,cited: ts-speech-and-background-music and WCAG 1.4.2
+reedable/Reedable#7,1,1.4.2,,,cited,cited: storage) - Application default - WCAG 1.4.2 Text spacing threshold Store the presets to the sto
+solex2006/SELIProject#91,1,1.4.2,,,cited,cited: o this cases *************** WCAG: 1.4.2 - [ ] **Good** Providing a control near the beginni
+knative/ux#68,1,1.4.3,,,cited,cited: Main website accessibility issue WCAG 1.4.3 @A11Ybot-OP commented on [Wed Mar 09 2022](https://git
+angular/angular.io#1731,1,1.4.3,,,cited,cited: ple applications should conform to WCAG 1.4.3 requirements. **The issue** In a number of cases the
+freedomofpress/securedrop.org#870,1,1.4.3,,,cited,"cited: "" links (meets AA but not AAA) WCAG [1.4.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-aud"
+halfmoonui/halfmoon#27,1,1.4.3,,,cited,"cited: d color contrast ratio of 4.5:1, ([WCAG 1.4.3 Contrast](https://www.w3.org/WAI/WCAG21/Understanding/"
+a11ySea/testing#5,1,1.4.3,,,cited,cited: ch item is optional --> - **WCAG: WCAG 1.4.3**
+a11ySea/testing#7,1,1.4.3,,,cited,cited: 1. # Specifications - **WCAG: WCAG 1.4.3**
+a11ySea/testing#2,1,1.4.3,,,cited,cited: ch item is optional --> - **WCAG: WCAG 1.4.3** ## Additional References - Link to any article
+a11ySea/testing#4,1,1.4.3,,,cited,cited: ch item is optional --> - **WCAG: WCAG 1.4.3**
+elastic/kibana#52379,1,1.4.3,,,cited,cited: org/WAI/WCAG21/quickref/?versions=2.0) [1.4.3 Contrast (Minimum)](https://www.w3.org/WAI/WCAG22/Unde
+solex2006/SELIProject#93,1,1.4.4,,,cited,"cited: o this cases *************** WCAG: 1.4.4 1. Make sure the text is scalable, and 2. Make sur"
+microsoft/PowerToys#12889,1,1.4.4,,,cited,cited: ng/resize-text.html Uploading WCAG 1.4.4 Power toys application does not adapt 400 zoom setting
+sumup-oss/circuit-ui#1679,1,1.4.4,,,cited,cited: ead on the web. WCAG success criterion [1.4.4 Resize Text](https://www.w3.org/WAI/WCAG21/Understandi
+pypi/warehouse#6376,1,1.4.4,,,cited,"cited: s is a problem for 2 reasons: - WCAG 1.4.4 - When we translate the links, they could be longer"
+pypi/warehouse#6374,1,1.4.4,,,cited,cited: acceptable for accessibility. Ref WCAG 1.4.4. This will also be a problem for internationalisation
+IQSS/dataverse#8135,1,1.4.4,,,cited,"cited: Out"" not visible at 200% zoom Per [WCAG 1.4.4 - Resize text](https://www.w3.org/TR/WCAG21/#resize-te"
+swiss/styleguide#138,1,1.4.4,,,cited,"cited: Accessibility - WCAG 1.4.4 Resize text, with IE9 the text is not scalable It shou"
+navikt/navno-search-frontend#5,1,1.4.4,,,cited,cited: bruker øker font-size i browser. (wcag 1.4.4) 1) Må overskrive nav-frontend som setter hmtl {fon
+microsoft/pxt-microbit#3625,1,1.4.4,,,cited,cited: to 200%. **WCAG Reference:** [WCAG 1.4.4 - Resize Text](https://www.w3.org/WAI/WCAG21/Understan
+eBay/skin#321,1,1.4.4,,,cited,"cited: s don't seem to support text zoom. WCAG 1.4.4 requires that at 200% text zoom, content is conserved,"
+DTS-STN/Life-Journeys#103,1,1.4.4,,,cited,cited: Fail 1.4.4 - Resize text ### Description WCAG [1.4.4 - Resize
+ORT-FIS-202108/proyecto-6-caraballo-lopez-speranza#103,1,1.4.6,,,cited,cited: WCAG - 1.4.6 Contrast (Enhanced) Con el fin de mejorar el producto
+freedomofpress/securedrop.org#871,1,1.4.8,,,cited,cited: option to chose between them. WCAG [1.4.8](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-aud
+janzeteachesit/100-days-of-writing#1049,1,1.4.8,,,cited,cited: rations and validated using the WCAG SC 1.4.8 which states &ldquo;Line spacing (leading) is at least
+OfficeDev/fluent-blocks#69,1,1.4.10,,,cited,"cited: oes not specify how it conforms to WCAG 1.4.10. - ~#52~ No longer blocked, the inputs needed for th"
+carbon-design-system/carbon#8057,1,1.4.10,,,cited,cited: the scrollable content needs to be WCAG 1.4.10 compliant CodeSnippet needs to deal with scrolling it
+carbon-design-system/carbon#8322,1,1.4.10,,,cited,cited: the scrollable content needs to be WCAG 1.4.10 compliant](https://github.com/carbon-design-system/ca
+wixtoolset/issues#6584,1,1.4.10,,,cited,cited: Install dialog doesn't meet WCAG 1.4.10 reflow requirement ## Bugs If this issue is a bug:
+adobe/aem-core-wcm-components#1725,1,1.4.10,,,cited,"cited: rt height of 256px, as required by WCAG 1.4.10 Reflow, if the video is fully in view the controls ma"
+codeforboston/police-data-trust#231,1,1.4.10,,,cited,cited: ional (accessibility requirement - WCAG 1.4.10) (Note: this should largely be handled by the mobil
+microsoft/pxt-microbit#3610,1,1.4.10,,,cited,cited: ' pop-up. **WCAG Reference:** [WCAG 1.4.10 - Reflow ](https://www.w3.org/WAI/WCAG21/Understandi
+microsoft/pxt-microbit#3522,1,1.4.10,,,cited,cited: lication. **WCAG Reference:** [WCAG 1.4.10 - Reflow ](https://www.w3.org/WAI/WCAG21/Understandi
+sparkdesignsystem/Backlog#1370,1,1.4.10,,,cited,cited: rolling at a width of 320 px. See [WCAG 1.4.10 Reflow](https://www.w3.org/WAI/WCAG21/Understanding/r
+CityOfDetroit/bloom#679,1,1.4.11,,,cited,cited: ntrast ratio of 3:1 Reference: [WCAG 1.4.11 Non text contrast](https://www.w3.org/TR/WCAG21/#non-
+carbon-design-system/carbon#6745,1,1.4.11,,,cited,cited: Content switcher fails WCAG 1.4.11 Non-text Contrast ## Content switcher fails to provid
+superhighfives/pika#30,1,1.4.11,,,cited,cited: Include pass/fail for WCAG 1.4.11 Non-text contrast Simple one really - where you have
+microsoft/microsoft-ui-xaml#2908,1,1.4.11,,,cited,"cited: unselected items, as specified in [MAS 1.4.11 - Non-text Contrast](https://microsoft.sharepoint.com"
+microsoft/fluentui-react-native#745,1,1.4.11,,,cited,cited: WCAG 1.4.11 Color Contrast violation on hovered controls in Fluen
+Altinn/app-frontend-react#232,1,1.4.11,,,cited,cited: he design system) [Read more on WCAG 1.4.11 ](https://www.w3.org/WAI/WCAG21/Understanding/non-tex
+microsoft/pxt-microbit#3547,1,1.4.11,,,cited,cited: & Chrome. **WCAG Reference:** [WCAG 1.4.11 - Non-text Contrast ](https://www.w3.org/WAI/WCAG21/
+microsoft/pxt-microbit#3760,1,1.4.11,,,cited,cited: application. WCAG Reference: [WCAG 1.4.11 - Non-text Contrast](https://www.w3.org/WAI/WCAG21/Un
+microsoft/pxt-microbit#3659,1,1.4.11,,,cited,cited: ' screen. **WCAG Reference:** [WCAG 1.4.11 - Non-text Contrast ](https://www.w3.org/WAI/WCAG21/
+microsoft/pxt-microbit#3618,1,1.4.11,,,cited,cited: & Chrome. **WCAG Reference:** [WCAG 1.4.11 - Non-text Contrast ](https://www.w3.org/WAI/WCAG21/
+cagov/ca-ds-beta#755,1,1.4.11,,,cited,cited: cus is not accessible According to WCAG 1.4.11 the outline color of the interactive element on focus
+twbs/bootstrap#34629,1,1.4.12,,,cited,"cited: his violates the WCAG Success Criterion 1.4.12: Text Spacing. To suits the criterion, line-height m"
+rokwire/illinois-app#1493,1,1.4.12,,,cited,cited: off by the form field itself. [WCAG 1.4.12 Text Spacing (AA)](https://www.w3.org/TR/WCAG21/#text
+WordPress/gutenberg#15145,1,1.4.13,,,cited,cited: WCAG reference: Success Criterion 1.4.13 Content on Hover or Focus https://www.w3.org/TR/WCAG
+ariakit/ariakit#887,1,1.4.13,,,cited,cited: Tooltips need to follow wcag 1.4.13 - allow hovering over tooltip ## 🐛 Bug report The
+carbon-design-system/carbon#8205,1,1.4.13,,,cited,cited: Component `Button` does not meet WCAG 1.4.13: Content on Hover or Focus ## Component `Button` does
+radix-ui/primitives#620,1,1.4.13,,,cited,cited: violates WCAG 2.1 AA Success Criterion 1.4.13 Content on Hover or Focus. ### Expected behavior
+vimeo/player.js#804,1,1.4.13,,,cited,cited: tooltips by using the ESC button [WCAG 1.4.13](https://www.w3.org/WAI/WCAG21/Understanding/content-
+atomiks/tippyjs#709,1,1.4.13,,,cited,cited: ment? This is a requirement for WCAG 1.4.13: Content on Hover or Focus: ![Screenshot 2020-02-2
+jadu/pulsar#1019,1,1.4.13,,,cited,cited: ionally they do not currently meet WCAG 1.4.13 at AA. **Ideal behaviour** There's a number of th
+ing-bank/lion#368,1,1.4.13,,,cited,cited: ving the mouse can aid in this. WCAG 1.4.13 states: > A mechanism is available to dismiss the a
+patternfly/patternfly-react#1457,1,1.4.13,,,cited,cited: tem with more details about this: [WCAG 1.4.13](https://www.w3.org/WAI/WCAG21/quickref/#content-on-h
+owncloud/web#4654,1,1.4.13,,,cited,cited: smissable via keyboard or pointer. WCAG 1.4.13: Content on Hover or Focus and BITV 2.0 Prüfschritt
+microsoft/fluentui#11721,1,1.4.13,,,cited,"cited: nt with the ""presistent"" aspect of WCAG 1.4.13. https://www.w3.org/WAI/WCAG21/Understanding/conte"
+ffoodd/a11y.css#430,1,1.3.1,,,cited,cited: n possible is now required in [WCAG 2.1 1.3.1 SC](https://www.w3.org/TR/WCAG21/#identify-input-purpo
+asuengineering/asu-labs-theme#16,1,1.3.1,,,cited,"cited: ## Reference (Reference WCAG 2.1, 1.3.1 Info and Relationships) WCAG 2.1 Score: Level A Pote"
+kylehalleman/covid19inwi#14,1,1.4.10,,,cited,cited: s. * Responsive: should pass [WCAG 2.1 1.4.10 (Reflow)](https://www.w3.org/WAI/WCAG21/Understanding
+asuengineering/asu-labs-theme#15,1,1.4.4,,,cited,"cited: ## Reference (Reference WCAG 2.1, 1.4.4 Contrast) WCAG 2.1 Score: Level A Potential User Bar"
+a11ySea/testing#16,1,2.1.1,,,cited,cited: s <!-- Each item is optional --> WCAG 2.1.1 ?
+vscodenpa/testissues#12905,1,1.3.1,,,cited,"cited: der users. More specifically, [WCAG 2.1 1.3.1 Level A](https://www.w3.org/WAI/WCAG21/Understanding/i"
+twbs/bootstrap#28411,1,1.4.13,,,cited,cited: ld stay visible on hover For WCAG 2.1 - 1.4.13 Content on Hover or Focus https://www.w3.org/WAI/WCA
+Esri/calcite-design-system#938,1,1.4.13,,,cited,cited: s like this behavior violates [WCAG 2.1 1.4.13 guidelines](https://www.w3.org/TR/WCAG21/#content-on-
+LSCOIT/LegalNavigator#637,1,2.1.1,,,cited,cited: descriptions of what I changed) WCAG 2.1.1 Keyboard: Review Site to Use Native HTML Tags Instead
+Adyen/adyen-web#1690,1,1.3.5,,,cited,cited: ntifying the input purpose. [WCAG 2.1 - 1.3.5 Identify Input Purpose](https://www.w3.org/WAI/WCAG21/
+alphagov/tech-docs-gem#110,1,1.4.4,,,cited,cited: s/core.erb#L6 This fails [WCAG 2.1 - 1.4.4 Resize text Level AA criterion](https://www.w3.org/WAI
+nvaccess/nvda#5958,1,2.1.1,,,cited,cited: icker will be USDOT-508 compliant (WCAG 2.1.1) even if the cell co-ordinates are announced by the da
+mitre/demodocus#18,1,2.1.2,,,cited,cited: WCAG 2.1.2 - No Keyboard Trap S.C. 2.1.2 - If keyboard focus can
+element-hq/hydrogen-web#841,1,2.2.2,,,cited,cited: antly and cannot be stopped (WCAG 2.1 / 2.2.2 violation) **Describe the bug** https://github.com/
+element-hq/element-web#18442,1,2.2.2,,,cited,cited: without option to stop them (WCAG 2.1 / 2.2.2 violation) ### Steps to reproduce 1. use a homeserver
+LSCOIT/LegalNavigator#577,1,2.1.2,,,cited,cited: WCAG 2.1.2 No Keyboard Trap: Ensure User Can Navigate to the Prev
+alphagov/govuk-frontend#1817,1,2.5.5,,,cited,cited: he breadcrumb component meets [WCAG 2.1 2.5.5 Target Size](https://www.w3.org/TR/WCAG21/#target-size
+jrobind/dev-jot#2,1,2.1.2,,,cited,"cited: Essentially, we need to prevent [WCAG 2.1.2 No Keyboard Trap. ](https://www.w3.org/TR/UNDERSTANDI"
+Quansight-Labs/jupyter-a11y-mgmt#169,1,2.1.2,,,cited,cited: fit [Understanding Success Criterion 2.1.2: No Keyboard Trap](https://www.w3.org/WAI/WCAG22/Under
+a11ySea/testing#14,1,2.2.2,,,cited,"cited: r than five seconds. From WCAG 2.1 2.2.2 Pause, Stop, HideLevel A Moving, blinking, scrolling:"
+asuengineering/asu-labs-theme#14,1,2.4.1,,,cited,"cited: . ## Reference (Reference WCAG 2.1, 2.4.1 Bypass Blocks) WCAG 2.1 Score: Level A Potential Use"
+Quansight-Labs/jupyter-a11y-mgmt#168,1,2.1.2,,,cited,cited: his is technically a violation of [WCAG 2.1.2 - No Keyboard Trap](https://www.w3.org/TR/WCAG22/#no-k
+swagger-api/swagger-editor#2410,1,2.1.2,,,cited,cited: [Accessibility] WCAG 2.1.2 -- The keyboard focus is getting trapped within editor
+ral-facilities/scigateway#825,1,2.2.6,,,cited,"cited: is, this does not satisfy WCAG timeouts 2.2.6. **Acceptance criteria**: - [ ] WCAG 2.1 2.2.6"
+microsoft/pxt#2360,1,2.1.2,,,cited,cited: ure keyboard focus is not trapped (WCAG 2.1.2) Standard : We must ensure that the user does not e
+thoughtbot/constable#764,1,2.4.6,,,cited,"cited: Relevant success criteria: [WCAG 2.1, 2.4.6 Headings and Labels](https://www.w3.org/TR/WCAG21/#hea"
+SAP/spartacus#11686,1,2.4.4,,,cited,cited: erview - Success Criterion: WCAG 2.1 - 2.4.4 - **MASTER** Ticket #11672 - [**Github label:**](htt
+wet-boew/wet-boew#8871,1,2.4.3,,,cited,"cited: WCAG 2.1 - 2.4.3 Focus Order - WET ""Steps Form"" Description: When the u"
+tinymce/tinymce#4459,1,2.1.2,,,cited,"cited: r using the keyboard. According to WCAG 2.1.2, having some sort of escape behavior (such as a differ"
+devilry/devilry-django#1201,1,2.1.2,,,cited,cited: olved in order to pass success Criteria 2.1.2 in WCAG 2. **Description** The comment editor uses
+vscodenpa/testissues#12882,1,3.3.2,,,cited,cited: put/overview) in order to meet WCAG 2.1 3.3.2 Level A. This feature request is potentially relate
+kausaltech/kausal-watch-ui#37,1,3.2.1,,,cited,cited: ce the language correctly) WCAG 2.1 3.2.1 AA
+microsoft/vscode#167870,1,3.3.2,,,cited,cited: put/overview) in order to meet WCAG 2.1 3.3.2 Level A. This feature request is potentially relate
+elastic/kibana#90515,1,2.1.4,,,cited,cited: to provide single key shortcuts ([WCAG 2.1.4](https://www.w3.org/WAI/WCAG21/Understanding/character
+alphagov/govuk-frontend#1972,1,4.1.2,,,cited,"cited: al reveals† was flagged as failing WCAG 4.1.2: > **4.1.2 Name, Role, Value**: For all user interf"
+alphagov/govuk-frontend#1991,1,4.1.2,,,cited,"cited: to all assistive technologies (WCAG 2.1 4.1.2 Name, Role, Value)](https://github.com/alphagov/govuk-"
+primefaces/primeng#11620,1,4.1.2,,,cited,"cited: ir form labels. This violates WCAG 2.1, 4.1.2 Name, Role, Value (Level A). ### Describe the solutio"
+Adyen/adyen-web#1623,1,4.1.2,,,cited,"cited: To meet the requirements of WCAG 2.1 ([4.1.2 name, role, value ](https://www.w3.org/WAI/WCAG21/quic"
+kausaltech/kausal-watch-ui#30,1,4.1.2,,,cited,cited: r filter/search selection. WCAG 2.1 4.1.2 A
+kausaltech/kausal-watch-ui#24,1,4.1.2,,,cited,"cited: overed by heating actions"" WCAG 2.1 4.1.2 A"
+kausaltech/kausal-watch-ui#29,1,4.1.2,,,cited,"cited: ilasta (avattu/suljettu)."" WCAG 2.1 4.1.2 A"
+dnet/androsphinx#19,1,2.2.1,,,cited,cited: ppeared too quickly. Related to WCAG 2.2.1 Timing adjustable.
+18F/tock#1181,1,2.2.1,,,cited,cited: nd accessibility problems. Per [WCAG 2.2.1 Timing Adjustable (Level A)](https://www.w3.org/TR/UND
+dwp/design-system#48,1,2.2.1,,,cited,cited: y are we doing it? Accessibility. WCAG 2.2.1 states a user must be able to add additional time onto
+owncloud/web#4336,1,2.2.1,,,cited,"cited: I'm afraid this is a violation of WCAG 2.2.1/BITV 2.2.1a, since it gives no warning, is cancellable"
+dwp/design-system-community-backlog#64,1,2.2.1,,,cited,cited: ervices meet WCAG 2.0 success criterion 2.2.1 - that services warn users before a timeout occurs and
+openlibhums/clean#13,1,2.2.2,,,cited,cited: skiping forwards and backwards. WCAG 2.2.2
+thexerteproject/xerteonlinetoolkits#922,1,2.2.2,,,cited,cited: page because it potentially fails WCAG 2.2.2 https://www.w3.org/WAI/WCAG21/Understanding/pause-stop
+microsoft/FluidFramework#3619,1,2.2.2,,,cited,cited: ntinuously looping GIF which is a [WCAG 2.2.2](https://www.w3.org/WAI/WCAG21/Understanding/pause-sto
+ministryofjustice/record-a-goose-sighting#7,1,2.2.2,,,cited,"cited: cessibility issue. It breaks the [WCAG 2.2.2 Pause, Stop, Hide (Level A) Guideline](https://www.w3."
+ampproject/amphtml#7975,1,2.2.2,,,cited,"cited: thod to ""pause;"" see Understanding WCAG 2.2.2 c) user forced to traverse entire carousel content"
+user-interviews/ui-design-system#604,1,2.2.3,,,cited,cited: erts that disappear automatically (WCAG 2.2.3). Sufficient technique: G5: Allowing users to complete
+amark/gun#1079,1,2.3.1,,,cited,"cited: WCAG 2.3.1 The main site, could cause photosensitive epilepsy."
+descartez/just-the-links#3,1,2.4.1,,,cited,cited: s page navigation. Relevant to [WCAG 2.4.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation
+OfficeDev/xblock-officemix#2,1,4.1.2,,,cited,"cited: rg/TR/WCAG20-TECHS/H64.html) - [WCAG 2: 4.1.2 Name, Role, Value](http://www.w3.org/TR/2008/REC-WCAG2"
+smashingmagazine/redesign#155,1,2.4.1,,,cited,"cited: This is a different way of solving WCAG 2.4.1 (bypass blocks). When the main element is included, sc"
+jupyterlab/jupyterlab#9688,1,2.4.1,,,cited,cited: n Aria-Role to Panels Requirement: WCAG 2.4.1 (A) From: #9399 and doesn't require a screenreader
+slidewiki/slidewiki-platform#1235,1,2.4.1,,,cited,"cited: Bypass blocks (WCAG 2.4.1) **Request:** Visually, websites are structured with m"
+alphagov/govuk-design-system#1561,1,2.4.1,,,cited,cited: longer skip past the navs etc for WCAG [2.4.1 bypass blocks](https://www.w3.org/WAI/WCAG21/Understan
+microsoft/pxt#2361,1,2.4.1,,,cited,cited: Accessibility: Bypass blocks (WCAG 2.4.1) Standard: Provides a way to skip blocks by using Tab
+CBHSQ/findtreatment#298,1,2.4.1,,,cited,"cited: more easily, and it satisfies the [WCAG 2.4.1 - Bypass Blocks (Level A)](https://www.w3.org/TR/2008/"
+freedomofpress/securedrop.org#872,1,2.4.1,,,cited,cited: be visible on keyboard focus. WCAG [2.4.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation
+flexion/fs-intake-module#323,1,2.4.1,,,cited,cited: andards: Section 508:1194.22 (o) WCAG 2.4.1 JIRA:https://criterion.atlassian.net/projects/EPERM
+cagov/ca-ds-beta#44,1,2.4.1,,,cited,cited: link is accessibility requirement (WCAG 2.4.1) ### Name *What should we call this component in c
+it-osu-web/it-osu-pl#235,1,2.4.1,,,cited,cited: hing the main content. To meet [WCAG 2.4.1 Bypass Blocks](https://www.w3.org/TR/WCAG21/#bypass-bl
+cncoulter/Graph_Paper#7,1,2.4.1,,,cited,cited: ble when focused. This relates to [WCAG 2.4.1: Bypass Blocks](https://www.w3.org/TR/UNDERSTANDING-WC
+LSCOIT/LegalNavigator#587,1,2.4.2,,,cited,cited: WCAG 2.4.2 Generate dynamic title for each web page _From @xilin9
+slidewiki/slidewiki-platform#1236,1,2.4.2,,,cited,cited: Page titles (WCAG 2.4.2) **Request:** The intent of this Success Criterion is
+bcgov/digital.gov.bc.ca#239,1,2.4.2,,,cited,cited: <title> within <head> Reference: [WCAG 2.4.2](https://www.w3.org/TR/WCAG21/#page-titled) ### The
+empowerai/fs-permit-platform#611,1,2.4.2,,,cited,cited: 08701b1b0a15) Linkage: CTF-94 WCAG: 2.4.2 Page Titled ## Acceptance criteria - [x] permit r
+City-of-Helsinki/servicemap#291,1,2.4.2,,,cited,"cited: in perinteisellä web-sivustolla. WCAG: 2.4.2 Sivuotsikot: Verkkosivuilla on otsikot, jotka kuvailev"
+elastic/eui#2356,1,2.4.2,,,cited,cited: ect.com/posts/skip-nav-links/) - [WCAG 2.4.2 Page Titled - Level A](https://www.w3.org/WAI/WCAG21/q
+seanredmond/Tindallgrams#24,1,2.4.2,,,cited,cited: describe topic or purpose. Fails [WCAG 2.4.2](https://www.w3.org/TR/2008/REC-WCAG20-20081211/#navig
+LSCOIT/LegalNavigator#588,1,2.4.3,,,cited,"cited: WCAG 2.4.3 Focus Order _From @xilin95 on October 30, 2018 22:54_"
+LIT-EIA/adapt-esdc-accessibilityfixes#161,1,2.4.3,,,cited,cited: on. I believe this is a failure of WCAG 2.4.3 Focus Order.
+Ember-Swiper/ember-cli-swiper#151,1,2.4.3,,,cited,cited: ility guidelines In order to meet [WCAG 2.4.3 - Focus Order](https://www.w3.org/TR/UNDERSTANDING-WCA
+middlebury/frontend#144,1,2.4.3,,,cited,"cited: e month and year dropdowns. For WCAG 2.4.3, we should decide if this is the intended behavior. Ad"
+Azure/react-azure-maps#87,1,2.4.3,,,cited,cited: time using the tab key. This fails WCAG 2.4.3 - https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigatio
+Automattic/jetpack#23396,1,2.4.3,,,cited,cited: that are inside the modal. See WCAG 2.4.3: https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation
+slidewiki/slidewiki-platform#1237,1,2.4.3,,,cited,cited: Focus order (WCAG 2.4.3) **Request:** The intent of this Success Criterion is
+filamentgroup/dialog#40,1,2.4.3,,,cited,cited: to the control which opened it. WCAG 2.4.3 — Focus Order
+carbon-design-system/carbon#3429,1,2.4.3,,,cited,cited: heckpoint does the issue violate? WCAG 2.4.3 1. Create and accordion with two accordion items 2
+navikt/aksel#1358,1,2.4.3,,,cited,cited: e på modalen. Suksesskriterie 3 i WCAG 2.4.3 passer med hvordan [Modal.accessibility.mdx](https://g
+microsoft/pxt#2362,1,2.4.3,,,cited,cited: Accessibility: Focus order (WCAG 2.4.3) Standard: The user must be able to move from one obj
+reach/reach-ui#134,1,2.4.7,,,cited,cited: n it receives the keyboard focus ([WCAG 2.4.7](https://www.w3.org/TR/2008/REC-WCAG20-20081211/#navig
+microsoft/BotFramework-WebChat#4263,1,2.4.3,,,cited,cited: pressing “tab” key. WCAG references: 2.4.3
+cds-snc/covid-alert-app#563,1,2.4.3,,,cited,cited: e content. **Bug or issue / WCAG** 2.4.3 Focus Order **Video of experience** https://drive.
+cds-snc/covid-alert-app#391,1,2.4.3,,,cited,cited: ouch/swipe. **Bug or issue / WCAG** 2.4.3 Focus Order **Drive video of experience:** https://
+CityOfBoston/Iterators#197,1,2.4.3,,,cited,cited: > Safari Trusted Tester Test WCAG 2.4.3: https://www.w3.org/WAI/WCAG21/Understanding/focus-or
+phase2/particle#91,1,2.4.4,,,cited,cited: Using aria-describedby to satisfy WCAG 2.4.4 Link Purpose in Context Link: http://oaa-accessibility
+jinky32/my3-fed-repository#6,1,2.4.4,,,cited,cited: G Reference**: This corresponds to WCAG 2.4.4 http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-m
+readthedocs/sphinx_rtd_theme#993,1,2.4.4,,,cited,cited: fails to be independently useful - WCAG 2.4.4 Link Purpose (In Context) (Level A) ### Reproducibl
+lauriii/umami#146,1,2.4.4,,,cited,"cited: L. This is considered an alert by WCAG (2.4.4 Link Purpose - Level A). # Example The image, titl"
+slidewiki/slidewiki-platform#1238,1,2.4.4,,,cited,cited: Link purpose (WCAG 2.4.4) **Request:** The intent of this criterion is to help
+filamentgroup/SocialCount#58,1,2.4.4,,,cited,cited: More specific link purpose for WCAG 2.4.4 Reported via https://twitter.com/stringy/status/580566
+joomla/joomla-cms#30564,1,2.4.4,,,cited,"cited: sulting in an accessibility error (WCAG 2.4.4 success criteria: Link Purpose), i.e. ``` <p class="""
+nvaccess/nvda#1633,1,2.4.4,,,cited,cited: programmatic context of a link for WCAG 2.4.4 **Reported by jongund on 2011-06-30 15:01** The follow
+Icinga/icingaweb2#1392,1,2.4.4,,,cited,cited: 77bc1a61811b2bba9e11e15fe16c5 WCAG/2.4.4: Add example for link contexts refs #8458 _2
+elementor/elementor#8087,1,2.4.4,,,cited,cited: e same destination. According to wcag 2.4.4 we should avoid duplicate links https://webaim.org/s
+empowerai/fs-permit-platform#617,1,2.4.4,,,cited,cited: 84760f1b0a2) Linkage: CTF-100 WCAG: 2.4.4 Link Purpose (In Context) ## Acceptance criteria
+samvera/hyrax#3041,1,2.4.4,,,cited,cited: er ### Related work Violates [WCAG 2.4.4](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation
+quailjs/quail#270,1,2.4.4,,,cited,"cited: guidelines"": { ""wcag"": { ""2.4.4"": { ""techniques"": [ ""H2"","
+ONSdigital/design-system#1601,1,2.4.4,,,cited,"cited: us your feedback](/#0)"" Fails [WCAG 2.4.4 Link Purpose (In Context)](https://www.w3.org/TR/WCAG2"
+RockefellerArchiveCenter/docs-build#65,1,2.4.4,,,cited,cited: tions See [Understand Link Purpose WCAG 2.4.4](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation
+wet-boew/wet-boew#500,1,2.4.4,,,cited,cited: d see the entire link text. Note: WCAG 2.4.4 requires meaningful link text. Although an argument co
+jinky32/my3-fed-repository#5,1,2.4.5,,,cited,cited: G Reference**: This corresponds to WCAG 2.4.5 http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-m
+WordPress/twentytwentyone#79,1,2.4.5,,,cited,cited: Accessibility: WCAG 2.4.5 Multiple Ways Level AA More than one way is available
+bcgov/digital.gov.bc.ca#243,1,2.4.5,,,cited,cited: avigate to other pages Reference: [WCAG 2.4.5 - Multiple Ways](https://www.w3.org/TR/WCAG21/#multipl
+canada-ca/design-system-systeme-conception#94,1,2.4.6,,,cited,cited: and unclear heading text (Failure WCAG 2.4.6) Unclear and repetitive headings are confusing and ove
+alphagov/govuk-frontend-docs#114,1,2.4.6,,,cited,cited: r related content is a failure of [WCAG 2.4.6: Headings and Labels](https://www.w3.org/WAI/WCAG21/Un
+slidewiki/slidewiki-platform#1239,1,2.4.6,,,cited,cited: Headings and labels (WCAG 2.4.6) **Request:** The intent of this criterion is to help
+LSCOIT/LegalNavigator#590,1,2.4.6,,,cited,cited: WCAG 2.4.6 Headings and Labels: Indicate Required Fields in Guide
+microsoft/pxt#2363,1,2.4.6,,,cited,cited: ccessibility: Headings and Labels (WCAG 2.4.6) Standard: Labeling forms and other objects descripti
+swiss/styleguide#139,1,2.4.6,,,cited,"cited: Accessibility - WCAG 2.4.6 Headings and labels, some labels are missing Descripti"
+swiss/styleguide#142,1,2.4.6,,,cited,"cited: Accessibility - WCAG 2.4.6 Headings and labels, FIELDSET element missing In order"
+swiss/styleguide#144,1,2.4.6,,,cited,"cited: Accessibility - WCAG 2.4.6 Headings and Labels, label is missing in the search-bo"
+storybookjs/storybook#5001,1,2.4.6,,,cited,cited: l) Adding a heading will fulfill [WCAG 2.4.6 Headings and Labels.](https://www.w3.org/WAI/WCAG21/qu
+joomla-projects/j4adminui#68,1,2.4.6,,,cited,cited: WCAG 2.4.6: Headings and Labels (Dashboard) ### Steps to reproduc
+PublicisSapient/accessible-ecommerce-demo#42,1,2.4.6,,,cited,"cited: ld is not informative According to WCAG 2.4.6, field labels must be informative. Currently, the l"
+quailjs/quail#121,1,2.4.6,,,cited,"cited: ingLevel"" guidelines: wcag: 2.4.6: techniques: - ""G130"" ... ```"
+cncoulter/Graph_Paper#8,1,2.4.6,,,cited,cited: uence. Don't skip heading levels. [WCAG 2.4.6](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation
+slidewiki/slidewiki-platform#1241,1,2.4.7,,,cited,cited: Focus visible (WCAG 2.4.7) **Request:** The purpose of this success criterion is
+KarimMokhtar/react-drag-drop-files#93,1,2.4.7,,,cited,"cited: indicator (for accessibility, see [WCAG 2.4.7](https://www.w3.org/TR/WCAG21/#focus-visible))"
+Quansight-Labs/jupyter-a11y-mgmt#167,1,2.4.7,,,cited,"cited: indicator, which is a violation of WCAG 2.4.7. This issue is about fixing those focus indicators fo"
+isawnyu/isaw.web#249,1,2.4.7,,,cited,cited: edit#bookmark=id.oqxdqqok7z3z) [WCAG 2.4.7 Focus Visible: Any keyboard operable user interface ha
+LSCOIT/LegalNavigator#591,1,2.4.7,,,cited,"cited: WCAG 2.4.7 Focus Visible _From @xilin95 on October 31, 2018 3:2_"
+WordPress/gutenberg#574,1,2.4.7,,,cited,cited: any keyboard operable control See WCAG 2.4.7 Focus Visible: Any keyboard operable user interface ha
+google/model-viewer#463,1,2.4.7,,,cited,cited: model. This is a requirement from [WCAG 2.4.7 Focus Visible](https://www.w3.org/WAI/WCAG21/Understan
+swiss/styleguide#145,1,2.4.7,,,cited,"cited: IMPORTANT! Accessibility WCAG 2.4.7 Focus in elements is not visible Elements in Header,"
+patternfly/patternfly#786,1,2.4.7,,,cited,cited: eet is to clearly indicate focus ([WCAG 2.4.7](https://www.w3.org/WAI/WCAG21/quickref/#focus-visible
+City-of-Helsinki/servicemap#290,1,2.4.7,,,cited,cited: sta iästä johtuvia näköongelmia. WCAG: 2.4.7 Näkyvä fokus: Kaikilla näppäimistöltä käytettävillä kä
+rokwire/illinois-app#1447,1,2.4.7,,,cited,"cited: low, must retest using screen reader) [2.4.7 Focus Visible](https://www.w3.org/TR/WCAG21/#focus-vis"
+telerik/kendo-ui-core#5947,1,2.4.7,,,cited,"cited: uch indication. This also violates WCAG 2.4.7. Moreover, there is no indication when a tab conten"
+Accessible360/accessible-slick#14,1,2.4.7,,,cited,cited: hat many people would expect. [WCAG 2.4.7](https://www.w3.org/WAI/WCAG21/Understanding/focus-vis
+cncoulter/Graph_Paper#2,1,2.4.7,,,cited,cited: is keyboard operable (tab-able). [WCAG 2.4.7](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation
+CovidShield/mobile#169,1,2.5.1,,,cited,cited: derneath. **Bug or issue / WCAG** 2.5.1: Pointer Gestures https://www.w3.org/WAI/WCAG21/Under
+CovidShield/mobile#170,1,2.5.1,,,cited,cited: e screen. **Bug or issue / WCAG** 2.5.1: Pointer Gestures https://www.w3.org/WAI/WCAG21/Under
+cds-snc/covid-alert-app#186,1,2.5.1,,,cited,cited: derneath. **Bug or issue / WCAG** 2.5.1: Pointer Gestures [https://www.w3.org/WAI/WCAG21/Unde
+cds-snc/covid-alert-app#185,1,2.5.1,,,cited,cited: e screen. **Bug or issue / WCAG** 2.5.1: Pointer Gestures [https://www.w3.org/WAI/WCAG21/Und
+chakra-ui/chakra-ui#6830,1,2.5.2,,,cited,cited: otentially cause any issues related to [2.5.2 Pointer Cancellation](https://www.w3.org/WAI/WCAG21/Un
+highcharts/sonification-studio#18,1,2.5.3,,,cited,"cited: t could arguably be a violation of WCAG 2.5.3 Label in Name with the current structure, as the spinb"
+plone/volto#3318,1,2.5.3,,,cited,"cited: 't contain text, this doesn't fail WCAG 2.5.3. - This is done by the Gutenberg editor so some use"
+Redocly/redoc#2223,1,2.5.3,,,cited,cited: WCAG 2.5.3 - Visible label and accessible name do not match **Des
+WordPress/twentytwentyone#82,1,2.5.3,,,cited,cited: Accessibility: WCAG 2.5.3 Label in Name Level A For user interface components wi
+GoogleChrome/web.dev#8795,1,2.5.3,,,cited,cited: etter practice (if not directly an WCAG 2.5.3 Label in Name fail). I would suggest starting with
+nl-design-system/backlog#64,1,2.5.5,,,cited,cited: shape) - [ ] Minimum target size ([WCAG 2.5.5](https://www.w3.org/TR/WCAG21/#target-size)) #### Dev
+nl-design-system/backlog#65,1,2.5.5,,,cited,cited: shape) - [ ] Minimum target size ([WCAG 2.5.5](https://www.w3.org/TR/WCAG21/#target-size)) #### Dev
+cds-snc/notification-planning#113,1,2.5.5,,,cited,cited: ght reuse this value elsewhere for WCAG 2.5.5 ### Resources - https://www.w3.org/WAI/WCAG21/quic
+cds-snc/resources-ressources#115,1,2.5.5,,,cited,cited: link too small WCAG 2.1 AAA Criterion [2.5.5: Target Size](https://www.w3.org/WAI/WCAG21/Understand
+rokwire/illinois-app#1456,1,2.5.5,,,cited,cited: r and adjust elements listed. The [WCAG 2.5.5 for Target ](https://www.w3.org/TR/WCAG21/#target-size
+ableplayer/ableplayer#494,1,2.5.5,,,cited,cited: Meeting WCAG 2.1 SC 2.5.5 Target Size [WCAG 2.1 Success Criterion 2.5.5 Target S
+jenkinsci/jenkins#11556,1,3.1.1,,,cited,cited: >In order to be compliant with the WCAG 3.1.1 accessibility criterion Jenkins should indicate the lo
+jinky32/my3-fed-repository#12,1,3.1.1,,,cited,cited: CAG Reference: This corresponds to WCAG 3.1.1
+hackoregon/civic#788,1,3.1.1,,,cited,cited: WCAG 3.1.1: <html> element must have a lang attribute (html) ## I
+dnet/androsphinx#15,1,3.1.1,,,cited,cited: the app to English. Related to WCAG 3.1.1 Language of page
+microsoft/pxt#2207,1,3.1.1,,,cited,cited: Accessibility: Language of Page (WCAG 3.1.1) Standard: Ensure that content developers provide inf
+elmarquis/Leaflet.GestureHandling#86,1,3.1.2,,,cited,cited: Wrong default language - WCAG 3.1.2 failure The libary is multilangue but use the wrong (s
+hmrc/accessibility#61,1,3.1.2,,,cited,cited: tside of `main` will still violate WCAG 3.1.2 Language of parts such as breadcrumbs service name etc
+usagov/vote-gov#437,1,3.1.2,,,cited,cited: e part must be specified. Per the [WCAG 3.1.2 Language of Parts (Level AA) Understanding document](h
+gctools-outilsgc/gcconnex#921,1,3.1.2,,,cited,cited: Language tagging on the wire WCAG 3.1.2 Language of Parts When users create content on the
+gctools-outilsgc/gcconnex#915,1,3.1.2,,,cited,cited: be tagged with the lang attribute WCAG 3.1.2 Language of Parts. Wrap any change in change in lan
+ckeditor/editor-recommendations#46,1,3.1.2,,,cited,cited: and RTL languages. - Support for [WCAG 3.1.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-ot
+ministryofjustice/record-a-goose-sighting#9,1,3.1.4,,,cited,cited: SPB' is not explained which breaks WCAG 3.1.4 https://www.w3.org/TR/2008/REC-WCAG20-20081211/#meanin
+cds-snc/platform-forms-client#1350,1,3.2.1,,,cited,cited: h a LANG attribute. Requirement: [WCAG 3.2.1](https://w3c.github.io/wcag/21/guidelines/#language-of
+slidewiki/slidewiki-platform#1240,1,3.2.1,,,cited,cited: Change of context (WCAG 3.2.1) **Request:** The intent of this criterion is to ensur
+LSCOIT/LegalNavigator#595,1,3.2.2,,,cited,cited: WCAG 3.2.2 On Input: warn user of language changes in language se
+wet-boew/wet-boew#8434,1,3.2.2,,,cited,"cited: t) been assessed for WCAG, specifically 3.2.2? We are considering following [WET Tables](https://wet"
+elastic/kibana#62477,1,3.2.2,,,cited,cited: nged when new data is loaded WCAG: [3.2.2 On Input ](https://www.w3.org/TR/WCAG22/#on-input)
+empowerai/fs-permit-platform#605,1,3.2.2,,,cited,cited: efox browser. Linkage: CTF-84 WCAG: 3.2.2 On Input ## Acceptance criteria - [x] focus shift
+Accessible360/accessible-slick#11,1,3.2.2,,,cited,cited: ge and focusOnSelect settings Per [WCAG 3.2.2](https://www.w3.org/WAI/WCAG21/Understanding/on-input.
+sparkdesignsystem/Backlog#1369,1,3.2.3,,,cited,cited: nsistent throughout the site. See [WCAG 3.2.3 - Consistent Navigation](https://www.w3.org/WAI/WCAG21
+alphagov/govuk-frontend#2531,1,3.2.4,,,cited,"cited: ""open and close"", this ties into [WCAG 3.2.4 consistency]( https://www.w3.org/WAI/WCAG21/Understan"
+sourcegraph/sourcegraph-public-snapshot#44946,1,3.2.4,,,cited,cited: ebar. This may be a violation of WCAG [3.2.4: Consistent Identification](https://www.w3.org/WAI/WCA
+sourcegraph/sourcegraph-public-snapshot#43154,1,3.2.4,,,cited,cited: is may actually be a violation of WCAG [3.2.4: Consistent Identification](https://www.w3.org/WAI/WCA
+WordPress/twentytwentyone#83,1,3.2.5,,,cited,cited: Accessibility: WCAG 3.2.5 Change on Request Level AAA Changes of context are ini
+empowerai/fs-permit-platform#607,1,3.3.1,,,cited,cited: a33db73cadc3) Linkage: CTF-87 WCAG: 3.3.1 Error Identification ## Acceptance criteria - [x]
+slidewiki/slidewiki-platform#1242,1,3.3.1,,,cited,cited: Error identification (WCAG 3.3.1) **Request:** The intent of this Success Criterion is
+carbon-design-system/carbon#11202,1,3.3.1,,,cited,cited: ### WCAG 2.1 Violation [WCAG 3.3.1 Error Identification](https://www.w3.org/TR/UNDERSTAND
+pypi/warehouse#6281,1,3.3.1,,,cited,cited: red status and format requirements WCAG 3.3.1: > Required form elements or form elements that req
+microsoft/pxt#2208,1,3.3.1,,,cited,cited: cessibility: Error Identification (WCAG 3.3.1) Standard: If an input error is automatically detect
+freedomofpress/securedrop#6238,1,3.3.1,,,cited,cited: linked to their triggering inputs (WCAG 3.3.1) This ticket tracks forms in the Source and Journalist
+vuestorefront/storefront-ui#2410,1,3.3.1,,,cited,cited: **Describe the bug** According to WCAG 3.3.1 Error Identification we should provide aria-invalid fo
+openlibhums/clean#9,1,3.3.2,,,cited,cited: a-required` attribute to `true` WCAG 3.3.2
+twbs/bootstrap#37403,1,3.3.2,,,cited,"cited: abs, it's typically a violation of WCAG 3.3.2 Labels or Instructions cause there is no label visibl"
+microsoft/pxt#2209,1,3.3.2,,,cited,"cited: ssibility: Labels or Instructions (WCAG 3.3.2) Standard: When user input is required, provide instr"
+samvera/hyrax#3129,1,3.3.2,,,cited,cited: . ### Related work Violates [WCAG 3.3.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-e
+redux-form/redux-form#4208,1,3.3.2,,,cited,cited: ing an ID for input fields breaks [WCAG 3.3.2 Labels or Instructions.](https://www.w3.org/WAI/WCAG21
+microsoft/fluentui#23740,1,3.3.2,,,cited,cited: a labels for checkbox to satisfy WCAG's 3.3.2 success criterion ### Library React / v8 (@fluentui/r
+Icinga/icingaweb2#1357,1,3.3.3,,,cited,cited: 42dff5287ebd93cbf7aa5f027dc2b WCAG/3.3.3: Add example for required form elements refs
+ORT-FIS-202108/proyecto-6-caraballo-lopez-speranza#105,1,3.3.6,,,cited,cited: WCAG - 3.3.6 Error Prevention (All) Con el fin de mejorar el produc
+flatpickr/flatpickr#2486,1,4.1.2,,,cited,"cited: WCAG 4.1.2: (Name, Role, Value) We use flatpickr on our website."
+freedomofpress/securedrop#6241,1,4.1.2,,,cited,cited: nt focus behind/outside `dialog`s (WCAG 4.1.2) ## Description [Accessibility Lab recommendation](
+firebase/friendlyeats-web#217,1,4.1.2,,,cited,cited: WCAG 4.1.2: Ensures buttons have discernible text (.devsite-devpr
+zyra/ionic-tooltips#70,1,4.1.3,,,cited,cited: accessibility of tooltip - WCAG 4.1.3 Users with disabilities have difficulties being aware
+videojs/video.js#7843,1,4.1.3,,,cited,cited: I believe this is a violation of [WCAG 4.1.3 - Status Messages](https://www.w3.org/WAI/WCAG21/Under
+openui/open-ui#454,1,4.1.3,,,cited,"cited: , it makes it easier to adhere to [WCAG 4.1.3](https://www.w3.org/WAI/WCAG21/Understanding/status-me"
+microsoft/PowerToys#13350,1,4.1.3,,,cited,cited: /status-messages.html Uploading WCAG 4.1.3- Narrator does not announce any information after movi
+alphagov/govuk-design-system#2402,1,4.1.3,,,cited,cited: he screen reader spike touched on [WCAG 4.1.3](https://www.w3.org/WAI/WCAG22/Understanding/status-me
+microsoft/AzureStorageExplorer#3470,1,4.1.3,,,cited,cited: pApp;#Azure Tools Storage Explorer;#WCAG4.1.3;#Win32;#A11ySev2;#Benchmark;#NVDA;#JAWS;#FTP;#STP;#Clo
