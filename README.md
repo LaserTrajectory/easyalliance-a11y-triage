@@ -33,6 +33,8 @@ Key values are never printed.
 | Build WCAG 2.2 list from W3C | `python scripts/build_wcag.py` | free |
 | Collect GitHub a11y issues | `python scripts/collect_issues.py` | free |
 | Label issues | `python -m triage.label --labeler yourname` | free, your time |
+| Or: collect issues pre-labeled by a cited criterion | `python scripts/collect_cited.py` | free |
+| Jev on the cited set | `python -m triage.run_eval --backend jev --issues data/issues_cited.jsonl --labels data/labels_cited.csv --run jev_cited` | ~$0.04 for 526 issues |
 | Expert spot-check sample | `python -m triage.label --export-review 30` | expert's time |
 | Check API keys | `python -m triage.check_keys --live` | < $0.0001 |
 | Offline plumbing run | `python -m triage.run_eval --backend mock` | free |
@@ -69,6 +71,7 @@ Try everything right now without keys or labels using the synthetic demo set:
 ```
 scripts/build_wcag.py      W3C WCAG 2.2 JSON -> data/wcag22.json (86 criteria, 4.1.1 dropped)
 scripts/collect_issues.py  gh search -> data/issues_raw.jsonl (filters leaks, bots, agent tickets)
+scripts/collect_cited.py   gh search -> data/issues_cited.jsonl + labels_cited.csv (cited criterion = label, redacted)
 triage/questions.py        the Choice/Score/Noul questions, two-stage WCAG mapping
 triage/backends.py         mock | jev | adapter, all returning one normalized Reply
 triage/pipeline.py         two calls + deterministic routing policy
@@ -85,6 +88,13 @@ triage/label.py            terminal labeling tool + expert review export
   advice to decompose questions. Criterion confidence is the joint probability across both stages.
 - **Leakage filter.** Issues that already cite a criterion number are dropped at collection,
   or the test would be trivial.
+- **Cited set.** `collect_cited.py` keeps exactly those issues instead: the criterion the author cited
+  becomes the label, and citations, criterion names next to them, technique codes and WCAG links are
+  redacted. Only issues created before 2023 (since 2024 most WCAG-citing tickets are agent-written),
+  in English, citing exactly one criterion, outside spec and checker repos. Only the criterion is
+  labeled. Rows flagged `handle_in_text` (the criterion's name still appears in the report) or
+  `automated` (pasted checker output) are easier; `labels_cited_clean.csv` leaves them out, so
+  `python -m triage.report results/jev_cited.jsonl --labels data/labels_cited_clean.csv` scores the harder subset.
 - **Spend safety.** Jev runs show a pre-flight estimate, ask for confirmation, stop at
   `--max-usd`, and cache every result so nothing is paid for twice.
 - **Routing thresholds** in `pipeline.py` are placeholders. Set them from the
