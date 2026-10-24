@@ -37,10 +37,16 @@ class Reply:
     cost_usd: float
 
 
+# Fit to 526 Jev calls: ~3.8 chars/token plus ~260 tokens of fixed overhead per call.
+# Rounded to the safe side so a run's total stays under the estimate (it came out ~20% over).
+CHARS_PER_TOKEN = 3.5
+TOKENS_PER_CALL = 300
+
+
 def estimate_tokens(state: dict, questions: dict) -> int:
-    """Rough pre-flight estimate (~4 chars/token) used for budget checks."""
+    """Conservative pre-flight estimate for one call, used for budget checks."""
     text = json.dumps(state) + json.dumps({k: q.model_dump() for k, q in questions.items()}, default=str)
-    return len(text) // 4
+    return int(len(text) / CHARS_PER_TOKEN) + TOKENS_PER_CALL
 
 
 def _normalize(raw) -> dict[str, Answer]:
