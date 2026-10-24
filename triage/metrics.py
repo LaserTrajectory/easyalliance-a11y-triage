@@ -7,6 +7,8 @@ human expert can't be trusted.
 
 import statistics
 
+from triage.pipeline import reroute
+
 THRESHOLDS = [0.5, 0.6, 0.7, 0.8, 0.9, 0.95]
 
 
@@ -38,7 +40,8 @@ def _conf_correct(pairs):
 
 
 def evaluate(rows: list[tuple[dict, dict]]) -> dict:
-    """rows: (label row from labels.csv, Triage.to_dict()) pairs."""
+    """rows: (label row from labels.csv, Triage.to_dict()) pairs. Routing is re-applied with the current policy."""
+    rows = [(lab, reroute(r)) for lab, r in rows]
     m: dict = {"n": len(rows)}
 
     for key in ("is_a11y_bug", "has_repro"):
@@ -76,10 +79,13 @@ def evaluate(rows: list[tuple[dict, dict]]) -> dict:
     }
 
     routes = [r["route"] for _, r in rows]
+    auto = [r["criterion"] == lab["criterion"] for lab, r in mapped if r["route"] == "auto"]
     auto_wrong = [lab["id"] for lab, r in mapped if r["route"] == "auto" and r["criterion"] != lab["criterion"]]
     wrongly_dismissed = [lab["id"] for lab, r in rows if r["route"] == "not_a11y" and lab.get("is_a11y_bug") == "1"]
     m["routing"] = {
         "counts": {k: routes.count(k) for k in ("auto", "expert_review", "not_a11y")},
+        "ask_tester": sum(r["ask_tester"] for _, r in rows),
+        "auto_accuracy": _acc([(None, ok) for ok in auto]),
         "auto_but_wrong_criterion": auto_wrong,
         "real_bugs_marked_not_a11y": wrongly_dismissed,
     }

@@ -26,6 +26,7 @@ class Triage:
     severity: float
     has_repro: float
     route: str  # "auto" | "expert_review" | "not_a11y"
+    ask_tester: bool = False  # report may lack repro detail: request it from the tester, whatever the route
     reasons: list[str] = field(default_factory=list)
     input_tokens: int = 0
     latency_s: float = 0.0
@@ -69,6 +70,7 @@ def triage(issue: dict, backend: Backend) -> Triage:
 
 
 def route(t: Triage) -> Triage:
+    t.reasons, t.ask_tester = [], False
     if t.is_a11y_bug < 0.5 or t.guideline == questions.NOT_WCAG:
         t.route = "not_a11y"
         t.reasons.append("model judged this is not a WCAG barrier; a human should confirm before closing")
@@ -77,11 +79,15 @@ def route(t: Triage) -> Triage:
         t.reasons.append(f"WCAG mapping confidence {t.criterion_p:.2f} < {AUTO_CONFIDENCE}")
     if t.severity >= ALWAYS_REVIEW_SEVERITY:
         t.reasons.append(f"severity {t.severity:.1f} is blocking-leaning")
-    if t.has_repro < 0.5:
-        t.reasons.append("report may lack reproduction detail; ask the tester for more")
-    if t.reasons:
-        t.route = "expert_review"
+    t.route = "expert_review" if t.reasons else "auto"
+    # Missing detail is the tester's to supply, not an expert's, so it doesn't block auto-triage.
+    t.ask_tester = t.has_repro < 0.5
     return t
+
+
+def reroute(result: dict) -> dict:
+    """Apply the current routing policy to a cached result, so changing the policy needs no new model calls."""
+    return route(Triage(**{k: v for k, v in result.items() if k in Triage.__dataclass_fields__})).to_dict()
 
 
 def describe(t: Triage) -> str:
@@ -100,5 +106,7 @@ def describe(t: Triage) -> str:
         f"  has repro    P={t.has_repro:.2f}",
     ]
     lines += [f"  why review:  {r}" for r in t.reasons]
+    if t.ask_tester:
+        lines.append("  ask tester   report may lack reproduction detail; request steps and AT/browser")
     lines.append(f"  usage        {t.input_tokens} input tokens, {t.latency_s * 1000:.0f} ms, ${t.cost_usd:.6f}")
     return "\n".join(lines)
