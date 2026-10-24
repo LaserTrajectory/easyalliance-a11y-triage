@@ -22,7 +22,12 @@ SEVERITY_LEVELS = [
 
 
 def stage1() -> dict:
-    guideline_options = {g["num"]: f"{g['handle']}: {g['text']}" for g in wcag.guidelines()}
+    # Naming each guideline's criteria places reports its one-line text doesn't suggest:
+    # without them, reflow and hover content were rarely put under 1.4 Distinguishable.
+    guideline_options = {
+        g["num"]: f"{g['handle']}: {g['text']} Criteria: {'; '.join(sc['handle'] for sc in g['criteria'])}."
+        for g in wcag.guidelines()
+    }
     guideline_options[NOT_WCAG] = (
         "Not a WCAG conformance problem: feature request, question, docs, tooling or test infrastructure."
     )

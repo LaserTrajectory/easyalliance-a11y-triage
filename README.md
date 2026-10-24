@@ -34,12 +34,13 @@ Key values are never printed.
 | Collect GitHub a11y issues | `python scripts/collect_issues.py` | free |
 | Label issues | `python -m triage.label --labeler yourname` | free, your time |
 | Or: collect issues pre-labeled by a cited criterion | `python scripts/collect_cited.py` | free |
-| Jev on the cited set | `python -m triage.run_eval --backend jev --issues data/issues_cited.jsonl --labels data/labels_cited.csv --run jev_cited` | ~$0.04 for 526 issues |
+| Jev on the cited set, tuning half | `python -m triage.run_eval --backend jev --issues data/issues_cited.jsonl --labels data/labels_cited.csv --split dev --run <name>` | ~$0.03 for 271 issues |
+| Then once, the held-out half | same with `--split test`, then `python -m triage.report results/<name>.jsonl --labels data/labels_cited.csv --split test` | ~$0.03 for 255 issues |
 | Expert spot-check sample | `python -m triage.label --export-review 30` | expert's time |
 | Check API keys | `python -m triage.check_keys --live` | < $0.0001 |
 | Offline plumbing run | `python -m triage.run_eval --backend mock` | free |
 | LLM baseline | `python -m triage.run_eval --backend adapter --provider anthropic --model claude-haiku-4-5-20251001` | LLM tokens |
-| Jev run | `python -m triage.run_eval --backend jev --max-usd 1` | ~$0.05 for all 561 issues |
+| Jev run | `python -m triage.run_eval --backend jev --max-usd 1` | ~$0.06 for all 561 issues |
 | Compare runs | `python -m triage.report` | free |
 | Live demo, one report | `python -m triage.demo "VoiceOver reads the close button as just 'button'"` | free with mock |
 
@@ -86,6 +87,11 @@ triage/label.py            terminal labeling tool + expert review export
 - **Two-stage WCAG mapping.** Guideline (13 options + "none"), then criterion within it
   (at most 13). Fits OpenJev's 52-option cap as well as Jev's 255, and follows TypeSafe's
   advice to decompose questions. Criterion confidence is the joint probability across both stages.
+  Each guideline option lists its criteria's names: with only the guideline's one-line text, Jev
+  almost never put reflow or hover content under 1.4 (Reflow was 0 of 22 right).
+- **Dev/test split.** `--split dev|test` (run_eval and report) keeps one half of any label file,
+  fixed by a hash of the issue id. Change wording or thresholds looking only at dev; run test once
+  at the end and report that number.
 - **Leakage filter.** Issues that already cite a criterion number are dropped at collection,
   or the test would be trivial.
 - **Cited set.** `collect_cited.py` keeps exactly those issues instead: the criterion the author cited
@@ -95,10 +101,13 @@ triage/label.py            terminal labeling tool + expert review export
   labeled. Rows flagged `handle_in_text` (the criterion's name still appears in the report) or
   `automated` (pasted checker output) are easier; `labels_cited_clean.csv` leaves them out, so
   `python -m triage.report results/jev_cited.jsonl --labels data/labels_cited_clean.csv` scores the harder subset.
-- **Spend safety.** Jev runs show a pre-flight estimate, ask for confirmation, stop at
-  `--max-usd`, and cache every result so nothing is paid for twice.
-- **Routing thresholds** in `pipeline.py` are placeholders. Set them from the
-  coverage/accuracy table in the Jev report, not by guessing.
+- **Spend safety.** Jev runs show a conservative pre-flight estimate (fit to real usage; runs
+  have cost about 20% less), ask for confirmation, stop at `--max-usd`, and cache every result
+  so nothing is paid for twice.
+- **Routing.** Reports re-apply the policy in `pipeline.py` to cached results, so changing it
+  costs no model calls. The thresholds are placeholders: set them from the coverage/accuracy
+  table in the Jev report, not by guessing. A report that may lack reproduction detail doesn't
+  go to an expert for that; it's flagged `ask_tester` so the tester is asked for more.
 - **Only title and body are sent** to any model. No URLs, usernames or repo metadata.
 
 See `OPEN_ISSUES.md` for what's deliberately not done yet.
