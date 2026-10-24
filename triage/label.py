@@ -10,6 +10,7 @@ shuffled order. Saved after every issue, so you can stop any time with Ctrl-C or
 
 import argparse
 import csv
+import hashlib
 import json
 import random
 import textwrap
@@ -25,11 +26,17 @@ def load_issues(path: Path) -> list[dict]:
     return [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
 
 
-def load_labels(path: Path) -> dict[str, dict]:
+def split_of(issue_id: str) -> str:
+    """'dev' or 'test'. Fixed by a hash of the id, so adding issues never moves one between halves."""
+    return "dev" if hashlib.sha256(issue_id.encode()).digest()[0] % 2 == 0 else "test"
+
+
+def load_labels(path: Path, split: str | None = None) -> dict[str, dict]:
+    """Labels by issue id; with `split`, only that half. Tune wording on dev, report on test."""
     if not path.exists():
         return {}
     with path.open() as f:
-        return {row["id"]: row for row in csv.DictReader(f)}
+        return {row["id"]: row for row in csv.DictReader(f) if split in (None, split_of(row["id"]))}
 
 
 def append_label(path: Path, row: dict) -> None:

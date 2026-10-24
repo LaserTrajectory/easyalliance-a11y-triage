@@ -3,6 +3,7 @@
     python -m triage.report                      # compare every run in results/
     python -m triage.report results/mock.jsonl results/jev_jev-latest.jsonl
     python -m triage.report --labels data/demo/labels.csv results/demo_mock.jsonl
+    python -m triage.report --labels data/labels_cited.csv --split test results/jev_cited*.jsonl
 """
 
 import argparse
@@ -60,7 +61,9 @@ def render(backend: str, m: dict) -> str:
         "",
         "## Routing with current policy",
         "",
-        f"auto: {r['counts']['auto']}, expert review: {r['counts']['expert_review']}, not a11y: {r['counts']['not_a11y']}",
+        f"auto: {r['counts']['auto']} ({_pct(r['auto_accuracy'])} right criterion), "
+        f"expert review: {r['counts']['expert_review']}, not a11y: {r['counts']['not_a11y']}. "
+        f"Ask the tester for reproduction detail: {r['ask_tester']}.",
         "",
         f"- Auto-routed with the wrong criterion: {len(r['auto_but_wrong_criterion'])} {r['auto_but_wrong_criterion'][:10]}",
         f"- Real bugs the model marked not-a11y: {len(r['real_bugs_marked_not_a11y'])} {r['real_bugs_marked_not_a11y'][:10]}",
@@ -78,11 +81,11 @@ def write(run: str, backend: str, rows: list[tuple[dict, dict]]) -> Path:
     return path
 
 
-def compare(paths: list[Path], labels_path: Path = ROOT / "data" / "labels.csv") -> str:
-    labels = load_labels(labels_path)
+def compare(paths: list[Path], labels_path: Path = ROOT / "data" / "labels.csv", split: str | None = None) -> str:
+    labels = load_labels(labels_path, split)
     out = [
-        "| Backend | n | Criterion acc | Criterion ECE | Coverage @0.8 | Acc @0.8 | a11y-bug acc | Cost | p50 ms |",
-        "|---|---|---|---|---|---|---|---|---|",
+        "| Run | Backend | n | Criterion acc | Criterion ECE | Coverage @0.8 | Acc @0.8 | Auto-routed | Auto acc | a11y-bug acc | Cost | p50 ms |",
+        "|---|---|---|---|---|---|---|---|---|---|---|---|",
     ]
     for p in paths:
         rows, backend = [], p.stem
@@ -93,9 +96,11 @@ def compare(paths: list[Path], labels_path: Path = ROOT / "data" / "labels.csv")
                 rows.append((labels[row["id"]], row["result"]))
         m = evaluate(rows)
         s8 = next(s for s in m["selective"] if s["threshold"] == 0.8)
+        r = m["routing"]
         out.append(
-            f"| {backend} | {m['n']} | {_pct(m['criterion']['accuracy'])} | {_f(m['criterion']['ece'])} | "
-            f"{_pct(s8['coverage'])} | {_pct(s8['accuracy'])} | {_pct(m['is_a11y_bug']['accuracy'])} | "
+            f"| {p.stem} | {backend} | {m['n']} | {_pct(m['criterion']['accuracy'])} | {_f(m['criterion']['ece'])} | "
+            f"{_pct(s8['coverage'])} | {_pct(s8['accuracy'])} | {_pct(r['counts']['auto'] / m['n'] if m['n'] else float('nan'))} | "
+            f"{_pct(r['auto_accuracy'])} | {_pct(m['is_a11y_bug']['accuracy'])} | "
             f"${m['usage']['cost_usd']:.4f} | {m['usage']['latency_p50_ms']:.0f} |"
         )
     return "\n".join(out)
@@ -105,5 +110,6 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("runs", nargs="*", type=Path)
     ap.add_argument("--labels", type=Path, default=ROOT / "data" / "labels.csv")
+    ap.add_argument("--split", choices=["dev", "test"], help="score only this half of the labels")
     args = ap.parse_args()
-    print(compare(args.runs or sorted((ROOT / "results").glob("*.jsonl")), args.labels))
+    print(compare(args.runs or sorted((ROOT / "results").glob("*.jsonl")), args.labels, args.split))

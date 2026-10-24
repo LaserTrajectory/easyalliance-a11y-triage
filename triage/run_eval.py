@@ -3,6 +3,7 @@
     python -m triage.run_eval --backend mock
     python -m triage.run_eval --backend adapter --provider anthropic --model claude-haiku-4-5-20251001
     python -m triage.run_eval --backend jev --max-usd 1.00
+    python -m triage.run_eval --backend jev --split dev ...   # tune on dev; run --split test once at the end
 
 Results are cached per run in results/<run>.jsonl, so an interrupted or
 re-run job never pays twice for the same issue. For paid backends a
@@ -39,13 +40,14 @@ def main() -> None:
     ap.add_argument("--usd-per-mtok", type=float, default=0.0, help="adapter only: blended price for cost tracking")
     ap.add_argument("--issues", type=Path, default=ROOT / "data" / "issues_raw.jsonl")
     ap.add_argument("--labels", type=Path, default=ROOT / "data" / "labels.csv")
+    ap.add_argument("--split", choices=["dev", "test"], help="only this half of the labels (see label.split_of)")
     ap.add_argument("--limit", type=int)
     ap.add_argument("--max-usd", type=float, default=1.00, help="hard stop on spend for this run")
     ap.add_argument("--run", help="run name (default: derived from backend)")
     ap.add_argument("--yes", action="store_true", help="skip the confirmation prompt for paid backends")
     args = ap.parse_args()
 
-    labels = load_labels(args.labels)
+    labels = load_labels(args.labels, args.split)
     issues = [i for i in load_issues(args.issues) if i["id"] in labels][: args.limit]
     if not issues:
         raise SystemExit(f"No labeled issues: label some first (python -m triage.label) or check {args.labels}")
@@ -65,7 +67,7 @@ def main() -> None:
     print(f"{backend.name}: {len(issues)} labeled issues, {len(done)} cached, {len(todo)} to run")
     if args.backend == "jev" and todo:
         est = preflight_usd(todo)
-        print(f"Estimated Jev cost: ${est:.4f} (upper bound, 2 calls/issue). Hard stop at ${args.max_usd:.2f}.")
+        print(f"Estimated Jev cost: ${est:.4f} (conservative: 2 calls/issue, largest criterion list). Hard stop at ${args.max_usd:.2f}.")
         if est > args.max_usd:
             raise SystemExit("Estimate exceeds --max-usd; lower --limit or raise --max-usd.")
         if not args.yes and input("Proceed? [y/N] ").strip().lower() != "y":
